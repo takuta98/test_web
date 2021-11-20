@@ -1,0 +1,37 @@
+<doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Google Code Prettify</title>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="margin-left:5%; margin-right:5%;">
+<h1>Google Code Prettify</h1>
+<hr />
+
+<p>JavaScript (Node.js) のソース表示例です。</p>
+<pre class="prettyprint">
+    var express = require('express');
+    var router = express.Router();
+
+    /* GET home page. */
+    router.get('/', function(req, res, next) {
+      res.render('index', { title: 'Express' });
+    });
+
+    /* GET /about */
+    router.get('/about', function(req, res, next) {
+      res.render('about', { title: 'バージョン情報', version: "0.1" });
+    });
+
+    /* GET /value/:n */
+    router.get('/value/:n', function(req, res, next) {
+      res.render('value', { title: "パラメータ付きのルート", n: req.params.n});
+    });
+
+    module.exports = router;
+</pre>
+</body>
+</html>
