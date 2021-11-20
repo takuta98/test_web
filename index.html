@@ -2,36 +2,38 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>Google Code Prettify</title>
+<title>Google Code Prettify のテスト</title>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body style="margin-left:5%; margin-right:5%;">
-<h1>Google Code Prettify</h1>
+<h1>Google Code Prettify のテスト</h1>
 <hr />
 
-<p>JavaScript (Node.js) のソース表示例です。</p>
 <pre class="prettyprint">
-    var express = require('express');
-    var router = express.Router();
-
-    /* GET home page. */
-    router.get('/', function(req, res, next) {
-      res.render('index', { title: 'Express' });
-    });
-
-    /* GET /about */
-    router.get('/about', function(req, res, next) {
-      res.render('about', { title: 'バージョン情報', version: "0.1" });
-    });
-
-    /* GET /value/:n */
-    router.get('/value/:n', function(req, res, next) {
-      res.render('value', { title: "パラメータ付きのルート", n: req.params.n});
-    });
-
-    module.exports = router;
+  {
+    "name": "pkkiのブログ!!",
+    "short_name": "pkkiのブログ!!",
+    "theme_color": "#36E1F1",
+    "background_color": "#36E1F1",
+    "display": "standalone",
+    "Scope": "https://pkki.online",
+    "start_url": "https://pkki.online",
+    "icons": [
+     {
+      "src": "/M/logo/logo1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+     },
+     {
+      "src": "/M/logo/logo5.png",
+      "sizes": "512x512",
+      "type": "image/png"
+     }
+    ],
+    "splash_pages": null
+  }
 </pre>
 </body>
 </html>
