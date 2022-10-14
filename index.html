@@ -1,34 +1,28 @@
-<head>
-<title>Google Code Prettify のテスト</title>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-<h1>Google Code Prettify のテスト</h1>
-<pre class="prettyprint">
-  {
-    "name": "pkkiのブログ!!",
-    "short_name": "pkkiのブログ!!",
-    "theme_color": "#36E1F1",
-    "background_color": "#36E1F1",
-    "display": "standalone",
-    "Scope": "https://pkki.online",
-    "start_url": "https://pkki.online",
-    "icons": [
-     {
-      "src": "/M/logo/logo1.png",
-      "sizes": "192x192",
-      "type": "image/png"
-     },
-     {
-      "src": "/M/logo/logo5.png",
-      "sizes": "512x512",
-      "type": "image/png"
-     }
-    ],
-    "splash_pages": null
-  }
-</pre>
-</body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-black text-white">
+        <h1 class="text-3xl font-bold p-6">
+            テストページ
+        </h1>
+        <div class="bg-white dark:bg-black p-6">
+            <a href="./for_selenium/index.html" class="no-underline hover:underline">
+                Selenium用
+            </a>
+        </div>
+        <div class="bg-white dark:bg-black p-6">
+            <a href="./scraping/index.html" class="no-underline hover:underline">
+                スクレイピング用
+            </a>
+        </div>
+        <div class="bg-white dark:bg-black p-6">
+            <a href="./google_code_prettify/index.html" class="no-underline hover:underline">
+                Google code prettify テスト
+            </a>
+        </div>
+    </body>
 </html>
